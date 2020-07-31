@@ -10,6 +10,7 @@ import PopularBattle from './components/PopularBattle';
 import DiscoverBattle from './components/DiscoverBattle';
 import Popular from './components/Popular';
 import Week from './components/Discover';
+// import Card from './components/movie/Card';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="App">
           <nav>
             <ul>
               <li><Link to="/">This week</Link></li>
