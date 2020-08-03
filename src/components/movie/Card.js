@@ -16,8 +16,8 @@ class Card extends React.Component {
   render() {
     return (
       <div>
-            <p>image: {this.props.image}</p>
-            <h1>title: {this.props.title}</h1>
+            <p img src={this.props.image}></p>
+            <h1>title: {this.props.movie.title}</h1>
             <h2>discription: {this.props.discription}</h2>
       </div>
     );

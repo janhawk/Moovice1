@@ -11,13 +11,14 @@ class Popular extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.themoviedb.org/3/movie/550?api_key=87be3fa1b183c85e6672f543408b2516")
+    const url = "https://api.themoviedb.org/3/popular"
+    fetch("url")
     .then(res => res.json())
-    .then(json => {
-      console.log(json);
+    .then(data => {
+      console.log(data);
       // code
       this.setState({
-        movies: json.movies,
+        movies
       })
     });
   }
@@ -25,9 +26,21 @@ class Popular extends React.Component {
   render() {
     return (
       <div>
-        <Card>
-        {this.state.movies}
-        </Card>
+        <h1>popular</h1>
+        <div>
+        {this.state.movies.map((movie) => {
+          return (
+            <div>
+              {movie.title}
+            </div> 
+            
+          );
+        })}
+        {/* <Card
+        
+        image={"https://image.tmdb.org/t/p/w300/" + movies.poster_path}
+        /> */}
+        </div>
       </div>
     );
   }
