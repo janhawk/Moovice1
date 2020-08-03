@@ -19,8 +19,8 @@ class Card extends React.Component {
       <div>
         
             <img src={this.props.image} />
-             {this.props.title}
-            <h2>discription: {this.props.discription}</h2>
+            {this.props.title}
+            {this.props.discription}
       </div>
     );
   }
