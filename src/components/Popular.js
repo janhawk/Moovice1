@@ -6,14 +6,14 @@ class Popular extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      movies: [],
+      movies: []
     };
   }
 
   componentDidMount() {
-    const url = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=87be3fa1b183c85e6672f543408b2516";
+    const url = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=87be3fa1b183c85e6672f543408b2516';
     
-    fetch("url")
+    fetch(url)
     .then(res => res.json())
     .then(data => {
 
