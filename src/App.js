@@ -9,7 +9,7 @@ import MyList from './components/MyList';
 import PopularBattle from './components/PopularBattle';
 import DiscoverBattle from './components/DiscoverBattle';
 import Popular from './components/Popular';
-import Week from './components/Discover';
+import Discover from './components/Discover';
 // import Card from './components/movie/Card';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,7 +42,7 @@ class App extends React.Component {
               <MyList />
             </Route>
             <Route path="/">
-              <Week />
+              <Discover />
             </Route>
           </Switch>
         </div>
