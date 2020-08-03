@@ -10,7 +10,7 @@ import PopularBattle from './components/PopularBattle';
 import DiscoverBattle from './components/DiscoverBattle';
 import Popular from './components/Popular';
 import Discover from './components/Discover';
-// import Card from './components/movie/Card';
+//import Card from './components/movie/Card';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
