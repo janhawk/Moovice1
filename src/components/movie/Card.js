@@ -22,6 +22,12 @@ class Card extends React.Component {
             <img src={picture} alt ={`movie ${this.props.title}`} />
             {this.props.title}
             {this.props.discription}
+            {/* <button
+              className='btn'
+                onClick={onClick}>
+                  {chikdren}
+                  <img src ={picture} alt = {`Movie ${title}`} />
+              </button> */}
       </div>
     );
   }

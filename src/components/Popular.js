@@ -41,6 +41,7 @@ class Popular extends React.Component {
         {this.state.movies.map((movie) => {
           return (
             <Card
+            
             {...movie}
               // title = {movie.title}
               // poster_path = {movie.poster_path}
@@ -48,10 +49,7 @@ class Popular extends React.Component {
             
           );
         })}
-        {/* <Card
-        
-        image={"https://image.tmdb.org/t/p/w300/" + movies.poster_path}
-        /> */}
+       
         </div>
       </div>
     );
