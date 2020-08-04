@@ -17,7 +17,8 @@ class Card extends React.Component {
     const picture = `https://image.tmdb.org/t/p/w300${this.props.poster_path}`;
     console.log('this.props', this.props);
     return (
-      <div>
+      <div 
+          onClick={this.props.clickFn}>
         
             <img src={picture} alt ={`movie ${this.props.title}`} />
             {this.props.title}

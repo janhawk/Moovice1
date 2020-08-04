@@ -51,11 +51,11 @@ class PopularBattle extends React.Component {
                     <Card 
                   
                       {...movie}
-                  
-                      description={movie.overview}
-                      img={"https://image.tmdb.org/t/p/w500" + movie.poster_path}
-                      onclick={() => {
-                    
+                      discription={movie.discription}
+                      // title = {movie.title}
+                      // poster_path = {movie.poster_path}
+                      
+                      onclickFn={() => {                
                       this.onclick(movie.id)
                   }}/>
                         )
